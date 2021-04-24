@@ -1,1 +1,192 @@
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --violet-color: hsl(277, 64%, 61%);
+  --light-color: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.6);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-background);
+  color: var(--light-color);
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+#card {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  background: var(--card-background);
+  margin: 5rem 1.5rem;
+  border-radius: 10px;
+}
+
+#card .right-card {
+  position: relative;
+  background: url("./images/image-header-mobile.jpg") no-repeat center
+    center/cover;
+  height: 15rem;
+}
+
+#card .right-card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsla(277, 75%, 32%, 0.6);
+}
+
+#card .left-card {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#card .left-card h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+#card .left-card h1 span {
+  color: var(--violet-color);
+}
+
+#card .left-card p {
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  color: var(--transparent-white);
+}
+
+#card .left-card .list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#card .left-card .list ul {
+  padding: 1rem;
+}
+
+#card .left-card .list .numbers {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#card .left-card .list .info {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--transparent-white);
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--light-color);
+  transition: color 300ms ease-in;
+}
+
+.attribution a:hover {
+  color: var(--violet-color);
+}
+
+@media(min-width: 768px ) {
+  #card .right-card {
+    height: 25rem; 
+  }
+}
+
+@media(min-width: 530px ) {
+  #card .right-card {
+    height: 25rem; 
+  }
+}
+
+@media(min-width: 1000px) {
+  #card {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 7rem auto;
+    height: 28rem;
+  }
+
+  #card .right-card {
+    position: relative;
+    background: url("./images/image-header-mobile.jpg") no-repeat center
+      center/cover;
+    height: 28rem;
+    width: 93%;
+  }
+
+  #card .left-card h1 {
+    margin: 3rem 6rem 0 4rem;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  #card .left-card p {
+    margin: 1rem 10rem 0 3rem;
+    text-align: left;
+  }
+
+  #card .left-card .list {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 2rem 0rem 4rem 4rem ;
+  }
+
+  #card .left-card .list li {
+    padding-right: 2rem;
+  }
+
+  .attribution {
+    padding-top: 3rem;
+  }
+}
+
+@media(min-width: 1300px) {
+  #card {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 25rem auto;
+  }
+  
+  #card .left-card .list {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 2.5rem 0rem 0rem 4rem;
+  }
+}
