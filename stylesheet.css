@@ -181,7 +181,7 @@ ul {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
-    margin: 25rem auto;
+    margin: 15rem auto;
   }
   
   #card .left-card .list {
