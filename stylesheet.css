@@ -19,7 +19,6 @@ body {
   background-color: var(--main-background);
   color: var(--light-color);
   line-height: 1.6;
-  overflow: hidden;
 }
 
 img {
@@ -120,19 +119,19 @@ ul {
   color: var(--violet-color);
 }
 
-@media(min-width: 768px ) {
+@media (min-width: 768px) {
   #card .right-card {
-    height: 25rem; 
+    height: 25rem;
   }
 }
 
-@media(min-width: 530px ) {
+@media (min-width: 530px) {
   #card .right-card {
-    height: 25rem; 
+    height: 25rem;
   }
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
   #card {
     display: flex;
     flex-direction: row;
@@ -164,7 +163,7 @@ ul {
     display: flex;
     flex-direction: row;
     text-align: left;
-    margin: 2rem 0rem 4rem 4rem ;
+    margin: 2rem 0rem 4rem 4rem;
   }
 
   #card .left-card .list li {
@@ -176,14 +175,14 @@ ul {
   }
 }
 
-@media(min-width: 1300px) {
+@media (min-width: 1300px) {
   #card {
     display: flex;
     flex-direction: row;
     max-width: 1200px;
     margin: 13rem auto;
   }
-  
+
   #card .left-card .list {
     display: flex;
     flex-direction: row;
